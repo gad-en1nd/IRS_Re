@@ -1,0 +1,32 @@
+{
+  "node": "P0",
+  "reviewer": "ChatGPT",
+  "decision": "PASS_NODE",
+  "reviewed_at": "2026-10-02T07:15:43.421982+00:00",
+  "generation": [
+    "P0",
+    "P0-R1"
+  ],
+  "initial_rejected_findings": [
+    "node sequence mismatch",
+    "unmeasured timestamp",
+    "Git immutability claim",
+    "baseline scope overstatement"
+  ],
+  "resolved": true,
+  "checks": {
+    "baseline_capture_equal_to_actual": true,
+    "frozen_git_identity_unchanged": true,
+    "existing_product_status_preserved": true,
+    "private_files_excluded": true
+  },
+  "gate_scope": "V01 baseline capture and current unchanged check only; remaining gates NOT_RUN",
+  "github_status": "DESTINATION_VERIFIED_UPLOAD_PENDING",
+  "artifact_sha256": {
+    ".gitignore": "5c1918bea7150799e710fa1914a1e4e24d5aa405de05776395b6040aa764ffd1",
+    "acceptance/V01-baseline.json": "b96d8597aae71b5f320074e0753ebb92c974e3dfe7ef9144f5b35113c9771708",
+    "README.md": "00f1c24e0d30a50902d914d12a5d9b6db7efb90bea783d8b1d551e3362957f8d",
+    "acceptance/plan.md": "6e29582e767c261a5b8d69f25ed81ec3ac531b53a3f7fc65ad97500c0f468b66",
+    "usage.jsonl": "3775219fe3ef9c35cf6ac7a598b7330b015c0f1024904315913b12deea0c0bb4"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "baseline_capture_status": "captured",
+  "scope_note": "Initial baseline capture prior to migration; not migration-end check, not full 930-file verification.",
+  "request_id": "IRS-WORKFLOW-M1-001",
+  "business_paused": true,
+  "effective_pause_policy": "USER-POLICY-PAUSE-AFTER-B04-20261002-001",
+  "head": "279152ce084d587f197d6def1afa7fb20c9d1e21",
+  "tag_commit": "279152ce084d587f197d6def1afa7fb20c9d1e21",
+  "tree": "d93af31e8ecc71bc09bf819e0ed929726fe11ad3",
+  "existing_status": "?? apps/work/",
+  "manifest.json_sha256": "660376d4031f693d28cdd2a8710bf6433ca1df2a6d592cbd08a0808adde0fb85",
+  "handout.md_sha256": "7f309847fff30fca2101a82c85bdaabc47b4b39db707ffd3d708d8d3fd00cdd7",
+  "control_file_sha256": [
+    {
+      "path": "README.md",
+      "sha256": "7422135529ba5412e351b1dda05ffa995a9b9696e64aa053a4f38c54836c3f25"
+    },
+    {
+      "path": "对话索引.json",
+      "sha256": "8bb4b52147f91617fe8a97d3113477537230e9b0260641b53a8446e571c8a607"
+    },
+    {
+      "path": "自主接管状态.json",
+      "sha256": "0a98323f49f43a0a0fd937ef1d880f25eedf4d31db22a0c4960b6140061ed70a"
+    },
+    {
+      "path": "审批记录.json",
+      "sha256": "cbf4c32dff440bb09c62b37bbf7a884c88a91e28ecd7cd3d014e067819fed044"
+    }
+  ]
+}

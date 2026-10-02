@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "native_wrapper": "WSL bubblewrap",
+  "native_boundary_sha256": "4fc8f30510a2fe959e95c9ebd310631cc86bf516019b8c4235b43fe913932944",
+  "native_proof_sha256": "756469adfbc5be137f52362fdfc4d4ba35b5ce646a99f30592937063b7affcc0",
+  "results": "14 actual file/network/child/readonly/allowlist/integrity checks PASS",
+  "scope": "preserved random fixture only, not unrestricted production tasks",
+  "recorded_at_utc": "2026-10-02T10:39:16.550131+00:00"
+}

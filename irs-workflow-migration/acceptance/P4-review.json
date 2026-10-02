@@ -1,0 +1,36 @@
+{
+  "node": "P4",
+  "status": "PASS_NODE_LOCAL",
+  "reviewer": "ChatGPT",
+  "implementation_author": "Gemini",
+  "reviewed_at_utc": "2026-10-02T11:01:04.781524+00:00",
+  "files": {
+    "native_boundary.py": "4fc8f30510a2fe959e95c9ebd310631cc86bf516019b8c4235b43fe913932944",
+    "gemini_tools.py": "b62cdb155e8bd71ee1dd6b116c1c21f523a2b5512e1e9c39f9dc9db90c1c6e85",
+    "gpt_decision.py": "d5ce2f7015cd8bfdb29fb8d727921f10f3da0d7b80a6b085a6a69226e5e110c4",
+    "decision-output.schema.json": "e7fac420dd59859dd48561bbf5faf0e8beceb26c03dadbf434da39fe1363de8c",
+    "runner.py": "83b7f49f5dfa648b47d5f11ae8827e4487ca21ca7f1f22f124eb6f88e9acc884",
+    "acceptance/native-isolation.json": "756469adfbc5be137f52362fdfc4d4ba35b5ce646a99f30592937063b7affcc0",
+    "acceptance/native-boundary-review.json": "68af5271f8ac27c8ad9df467c26756334ee8ad558ee5ed84b835ab11457d7871",
+    "acceptance/gemini-tools-probe.json": "da7cd6596d9fc42131e5ad23ce85cc9f0eca28785e25c1bceeb32c1432221ea9",
+    "acceptance/gemini-tools-review.json": "316d4318013ae291c40c168c0e5bb039e03a5ee00eb648c625c0d536dc6b555a",
+    "acceptance/gpt-review-probe.json": "5dfc5eefacab37099ae046e38eec61ec79966c30f5c50bfd2f16e63989ad5087",
+    "acceptance/gpt-review-packet.json": "4cf678fadfe50dca8d261033bcdcf58b5b12ef280d9f6072e467b855ccf27839",
+    "acceptance/P3-tests.json": "df83fcc096613c88d77b6b575969d62ba3451d7e99ea2e36cf43f8c9984b71e6"
+  },
+  "checks": {
+    "native_isolation_actual_checks": 14,
+    "gemini_proxy_actual_tool_rounds": 4,
+    "gemini_actual_tools": 3,
+    "full_assistant_message_preserved": true,
+    "runner_unittests_after_wrapper_change": 23,
+    "gpt_output_path_negative_checks": 10,
+    "gpt_cli_schema_transport": "PASS",
+    "gpt_cli_partial_source_decision": "needs_evidence"
+  },
+  "limitations": [
+    "Write/run tools validated for preserved random candidate fixture only; not enabled for general business tasks",
+    "GPT partial-code probe is not an approval of the whole engine",
+    "Existing HTML browser visual validation remains unknown; no human visual claim"
+  ]
+}

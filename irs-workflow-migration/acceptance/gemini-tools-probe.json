@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "session_id": "80de6d60-8ae5-456f-847f-81f5970c7b41",
+  "utc_timestamp": "2026-10-02T10:52:18.357376+00:00",
+  "round_count": 4,
+  "distinct_tool_count": 3,
+  "tool_names": [
+    "read_file",
+    "run_check",
+    "write_file"
+  ],
+  "matched_ids": [
+    "read_file-1790938340746747800-1",
+    "run_check-1790938348389637200-3",
+    "write_file-1790938345484616400-2"
+  ],
+  "requested_model": "gemini-3.8-flash-high",
+  "actual_models": [
+    "gemini-3.8-flash",
+    "gemini-3.8-flash-n",
+    "gemini-3.8-flash",
+    "gemini-3.8-flash-n"
+  ],
+  "elapsed_seconds": 14.3214,
+  "usage": {
+    "prompt_tokens": 2066,
+    "completion_tokens": 550,
+    "total_tokens": 2616,
+    "cached_tokens": "unknown"
+  },
+  "content_hashes": {
+    "input_sha256": "0bd0591e4f605e8862e14242d934faabc50ffd42718ecf6ff3c34420c0d8b6ac",
+    "result_sha256": "df0c766b27441553c71b63ca9b3749a7cce6e60b54959610c1b2fbb8b1fbe4dc"
+  },
+  "checks": {
+    "three_distinct_tools": true,
+    "child_checker": true,
+    "token_verified": true,
+    "sum_verified": true,
+    "input_unchanged": true
+  }
+}

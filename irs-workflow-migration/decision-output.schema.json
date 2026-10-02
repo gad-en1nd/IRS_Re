@@ -32,24 +32,24 @@
       "additionalProperties": false,
       "properties": {
         "commit": {
-          "oneOf": [
-            {
-              "type": "null"
-            },
+          "anyOf": [
             {
               "type": "string",
               "pattern": "^[a-f0-9]{40}$"
+            },
+            {
+              "type": "null"
             }
           ]
         },
         "tree": {
-          "oneOf": [
-            {
-              "type": "null"
-            },
+          "anyOf": [
             {
               "type": "string",
               "pattern": "^[a-f0-9]{40}$"
+            },
+            {
+              "type": "null"
             }
           ]
         },
@@ -63,13 +63,20 @@
         },
         "scope": {
           "type": "string",
-          "enum": ["migration", "business"]
+          "enum": [
+            "migration",
+            "business"
+          ]
         }
       }
     },
     "decision": {
       "type": "string",
-      "enum": ["approve", "reject", "needs_evidence"]
+      "enum": [
+        "approve",
+        "reject",
+        "needs_evidence"
+      ]
     },
     "findings": {
       "type": "array",
@@ -85,11 +92,16 @@
     },
     "review_kind": {
       "type": "string",
-      "enum": ["technical", "agent_visual"]
+      "enum": [
+        "technical",
+        "agent_visual"
+      ]
     },
     "human_approval": {
       "type": "boolean",
-      "enum": [false],
+      "enum": [
+        false
+      ],
       "description": "GPT 审查输出中 human_approval 必须为 false，不得伪造人类授权"
     },
     "authorization_source_ref": {
@@ -99,7 +111,10 @@
     },
     "scope": {
       "type": "string",
-      "enum": ["migration", "business"]
+      "enum": [
+        "migration",
+        "business"
+      ]
     }
   }
 }

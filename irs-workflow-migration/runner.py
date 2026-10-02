@@ -668,8 +668,8 @@ class Runner:
                         raise ValidationError("V05 native proof not valid JSON") from exc
                     if not isinstance(native_proof_data, dict):
                         raise ValidationError("V05 native proof JSON must be an object")
-                    if native_proof_data.get("native_wrapper") != "codex sandbox":
-                        raise ValidationError("V05 native proof native_wrapper must be 'codex sandbox'")
+                    if native_proof_data.get("native_wrapper") not in ("codex sandbox", "WSL bubblewrap"):
+                        raise ValidationError("V05 native proof native_wrapper must be 'codex sandbox' or 'WSL bubblewrap'")
                     results = native_proof_data.get("results")
                     if not isinstance(results, dict):
                         raise ValidationError("V05 native proof missing results dictionary")

@@ -1,0 +1,50 @@
+{
+  "profile": "native-isolation-bubblewrap",
+  "native_wrapper": "WSL bubblewrap",
+  "deletion_limitation": "No deletion tool; OS write permission permits own workspace mutation.",
+  "timestamp_utc": "2026-10-02T10:35:46.668588+00:00",
+  "duration_seconds": 12.124,
+  "status": "PASS",
+  "results": {
+    "read_allowed": "PASS",
+    "write_allowed": "PASS",
+    "read_outside_denied": "PASS",
+    "write_outside_denied": "PASS",
+    "private_read_denied": "PASS",
+    "network_denied": "PASS",
+    "child_read_outside_denied": "PASS",
+    "child_write_outside_denied": "PASS",
+    "child_network_denied": "PASS",
+    "readonly_worker": "PASS",
+    "symlink": "PASS",
+    "tool_allowlist": "PASS",
+    "fixed_child_check": "PASS",
+    "integrity": "PASS"
+  },
+  "raw_worker_probe": {
+    "netns": "net:[4026532308]",
+    "details": {
+      "has_route": false,
+      "connect_external": false,
+      "read_outside": "denied_2",
+      "write_outside": "denied_2",
+      "read_private": "denied_2",
+      "write_private": "denied_2",
+      "symlink_read": "denied_2",
+      "symlink_write": "denied_2"
+    }
+  },
+  "raw_child_probe": {
+    "parent_netns": "net:[4026532371]",
+    "child_netns": "net:[4026532371]",
+    "details": {
+      "token_sum_valid": true,
+      "has_route": false,
+      "child_read_outside": "denied_2",
+      "child_write_outside": "denied_2",
+      "child_read_priv": "denied_2",
+      "child_write_priv": "denied_2",
+      "child_write_ro": "denied_30"
+    }
+  }
+}

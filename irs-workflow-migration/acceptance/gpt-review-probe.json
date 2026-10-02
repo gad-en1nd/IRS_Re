@@ -1,0 +1,36 @@
+{
+  "node": "C09",
+  "transport_status": "PASS",
+  "reviewer": "ChatGPT",
+  "decision": {
+    "request_id": "REQ-C09-PROBE",
+    "candidate": {
+      "commit": null,
+      "tree": null,
+      "content_hash": "sha256:620b08b6be994177bc89a9c9cb939aadd14abf034d6aceba9b1df9026d52fd73",
+      "evidence_hash": "sha256:70247d0c3d67f0f1baca0f8a6b56ed69bba9395e09a3391b1ae6d7e34d3a4c26",
+      "scope": "migration"
+    },
+    "decision": "needs_evidence",
+    "findings": [
+      "Replay correctness depends on omitted snapshot validation, event validation, state application, ledger reading, and fingerprint implementations. Supply these implementations and the initial-state contract to verify deduplication and decision reconstruction.",
+      "Ingest synchronizes existing decisions before validating the prospective event, then durably appends the event before updating derived outputs. Supply decision synchronization, locking, and atomic-write implementations plus failure-injection evidence to establish intended rejection and crash-recovery behavior.",
+      "The supplied PASS summary and hashes do not show test assertions or coverage. Supply relevant test cases and results from acceptance/P3-tests.json; test counts alone cannot establish correctness."
+    ],
+    "evidence_refs": [
+      "acceptance/P3-tests.json"
+    ],
+    "review_kind": "technical",
+    "human_approval": false,
+    "authorization_source_ref": "gpt-c09-probe",
+    "scope": "migration"
+  },
+  "scope": "partial-code bounded review transport and reject missing evidence, not a full code approval",
+  "output_path_and_fake_approval_negative_checks": 10,
+  "usage": {
+    "input_tokens": 20695,
+    "output_tokens": 526,
+    "cached_input_tokens": 0
+  },
+  "recorded_at_utc": "2026-10-02T10:54:23.253920+00:00"
+}

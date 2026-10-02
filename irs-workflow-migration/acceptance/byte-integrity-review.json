@@ -1,0 +1,374 @@
+{
+  "status": "PASS_LOCAL_BYTES",
+  "reviewer": "ChatGPT",
+  "implementation_author": "Gemini",
+  "scope": "irs-workflow-migration only",
+  "reason": "Earlier content upload applied universal newline normalization CRLF -> LF; final snapshot preserves original evidence bytes. Historic commits are retained, not rewritten.",
+  "git_newline_rule": "directory-local .gitattributes: ** -text",
+  "global_config_changed": false,
+  "local_index_matches_raw_bytes": true,
+  "artifact_count_before_this_receipt": 60,
+  "remote_verification": "Performed after final upload; separate final user receipt records actual outcome.",
+  "files_before_this_receipt": [
+    {
+      "path": "irs-workflow-migration/.gitattributes",
+      "bytes": 10,
+      "git_blob_sha": "165c758581197c6c6e807124ec841eb08db8fd2b",
+      "sha256": "4ce4b6e6b8435f8c3a8387387732964a2ebf0183e8d77b8247ae8061b033e462"
+    },
+    {
+      "path": "irs-workflow-migration/.gitignore",
+      "bytes": 82,
+      "git_blob_sha": "1d05da1f7dee1c18f0aaf7ff62c659f3afa12771",
+      "sha256": "02c4ba994356467374bc91e7fe445401df3480e6289fa4c38db6afab917a420c"
+    },
+    {
+      "path": "irs-workflow-migration/README.md",
+      "bytes": 2537,
+      "git_blob_sha": "513fdc7863f4c4038eeaa787da131feed2e8eae8",
+      "sha256": "72c7335b1c466dcfce27af94791807e072ca6b85be6686f5c3c717fd5d4fbe9d"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P0-review.json",
+      "bytes": 1211,
+      "git_blob_sha": "e1881e693a0877071e7411e387e89bcbc1ec6a58",
+      "sha256": "9ff963bdfda45bf94ef412f0676eab11d3b24075116a0ba84eeb1937ee56d600"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P1-review.json",
+      "bytes": 1301,
+      "git_blob_sha": "9d2a94830a64d3d0347b009534a97090c7033f7f",
+      "sha256": "b85c20260edd83593e4d685e2ffda76a3e22f82a91fce729c0640847b7aca932"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P2-review.json",
+      "bytes": 1687,
+      "git_blob_sha": "892fed6c18b46fbc048c260964377fa2f3c2e2e4",
+      "sha256": "89512f73c5fcc3e9d15b5e2cf545f8b8c018638d3bfca7ef5a0fab09fbf76a0b"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P3-review.json",
+      "bytes": 1222,
+      "git_blob_sha": "5cca565f054a2d2a951a3ab845dcdec3c797fdfc",
+      "sha256": "9786c8230c8d9660d14a6707a945c97a5517aca7d294812d6f47cfec6c3d94dd"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P3-tests.json",
+      "bytes": 520,
+      "git_blob_sha": "dc1cbdc2d177fbb4e6047e89cacb6e03170c1970",
+      "sha256": "df83fcc096613c88d77b6b575969d62ba3451d7e99ea2e36cf43f8c9984b71e6"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P4-review.json",
+      "bytes": 2108,
+      "git_blob_sha": "e6b5e96d7cb8d45f2022a86e0dbb27321a6999a5",
+      "sha256": "b2f3e93d2fb852151bc8078f0f26ef2991e082a9fdfacab3bd1e67d2a7fb7d89"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P5-review.json",
+      "bytes": 508,
+      "git_blob_sha": "ecfdc53ba5eff52f8b7c4870be8956ca4b4b1a97",
+      "sha256": "0be397b5e167dcfc1150ed86054a5d926e45fa72e1638d28a4ad458d04aa6a06"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P6-baseline-check.json",
+      "bytes": 1476,
+      "git_blob_sha": "55e42458fe5a843418d8990b0e2acebc48f24c41",
+      "sha256": "8dfa7b1e46049bbed21d45afbecce2a054c3088aab8fc13348241098c0c2ce72"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P6-review.json",
+      "bytes": 2538,
+      "git_blob_sha": "ac784318b542fdc868b0c9a56c45987a35ce6319",
+      "sha256": "660e6334cfb0e1fd34cc1e59cddd8219e508839ff877c87cdf9122e4118ba16c"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P6-tests.json",
+      "bytes": 1276,
+      "git_blob_sha": "700e6cd820b9f4471313a67220136ca5630bd9a8",
+      "sha256": "a90375c34a0723df841a86d7be09ec1d8de1abd030975e1a8cc1fd4b7b1bf385"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/P7-review.json",
+      "bytes": 1236,
+      "git_blob_sha": "cc63112e9171245a87a3c9e080597237d9435451",
+      "sha256": "cad3c18b87725541d4c6c810488092036c53ec1342edbf5c1328e0a37d7c3c2c"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V01-baseline.json",
+      "bytes": 1278,
+      "git_blob_sha": "267382242006985261fbe0cb1621d26b862a7ea9",
+      "sha256": "b96d8597aae71b5f320074e0753ebb92c974e3dfe7ef9144f5b35113c9771708"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V01-cutover.json",
+      "bytes": 799,
+      "git_blob_sha": "72857ceb2a10ad8bbacdc0ad747f11ebdbde3b24",
+      "sha256": "07acdb0315b372767f64c827f957d4776b9bb3380b52b472c62289a630929094"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V02-cutover.json",
+      "bytes": 784,
+      "git_blob_sha": "4654849f09571857af9f12152307b36ac6eae0ad",
+      "sha256": "d84694863ff966dacb823cad434fc1c6c2e5f62e64fc0fa1ac929e78b2ee1c86"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V03-cutover.json",
+      "bytes": 754,
+      "git_blob_sha": "3d6436afcaff34e6bb4d6f8896e2deecf6d59692",
+      "sha256": "8071b3fa090bcc4285980bde6211fd23a4ef9fa975272c9608a27e57d0e846b4"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V04-cutover.json",
+      "bytes": 886,
+      "git_blob_sha": "cf0cac11c1f6c69c9ab0e89d3165166ad1d2c971",
+      "sha256": "0b3460b1a82cc78d4d1e1d1c9fe375e4fc7ebe01c171bb82831f5a206a41d6fc"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V05-cutover.json",
+      "bytes": 1165,
+      "git_blob_sha": "a3df8aa5a1b8785251ef0eb4d5e0d8cf169a54c1",
+      "sha256": "4491c018fd0cbb4487eac83432a21920b65552b9ea880092b8601dc1bf605795"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V06-cutover.json",
+      "bytes": 822,
+      "git_blob_sha": "3eb760b9f6b0429229b548bf06056ba9299570d7",
+      "sha256": "644cc74bd74cb786369c7584c17fde8cd20c68649259844602d2c08327c1940f"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V07-cutover.json",
+      "bytes": 927,
+      "git_blob_sha": "cec4c642fd74fadb7e079a006aca50abb0ada039",
+      "sha256": "6a6647f65861c690e644b9338711bf29542caa8bbd5184811d713ca25126e5c3"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V08-cutover.json",
+      "bytes": 1178,
+      "git_blob_sha": "881b883ec87a340793ab98171ae1d416983a64e6",
+      "sha256": "af01963334093b585567c9aa8b6b60bdb1eadc7ed388a23def3df440ee3d5f53"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V09-cutover.json",
+      "bytes": 809,
+      "git_blob_sha": "46da20335ba818dde74edc8009e071cf9a1c4555",
+      "sha256": "ba84c6ab13b470739ca960d471a36e0303d220d65593f3264b14f2b7270034b4"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/V10-cost.json",
+      "bytes": 603,
+      "git_blob_sha": "b5b33da7af802f6b2a65126376432c0e0a118300",
+      "sha256": "51f34e7d9da606813e8fc4483f6dc6481293fc5cee6e0bc0c3fac6810f7b553b"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/automation-retirement.json",
+      "bytes": 627,
+      "git_blob_sha": "7d71cde555263650a8663a4019e5b605754205af",
+      "sha256": "85101c004777f297967df9a5acffc7295e8400a671c0c8574b551e71c6c29db2"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/cost-observations.json",
+      "bytes": 4641,
+      "git_blob_sha": "707f0859a33a3f8e0bae95987da015560a43b884",
+      "sha256": "e3bf7ae315d267e5fdfb07a4b04e2f547dd0686309fe04e0fa205a8a579f5bd0"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/gemini-tools-probe.json",
+      "bytes": 1135,
+      "git_blob_sha": "36c3d28377aced7b4022ce18c8606a7d952aef08",
+      "sha256": "da7cd6596d9fc42131e5ad23ce85cc9f0eca28785e25c1bceeb32c1432221ea9"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/gemini-tools-review.json",
+      "bytes": 449,
+      "git_blob_sha": "bdd428c644a0f80749762c7805df332425220818",
+      "sha256": "316d4318013ae291c40c168c0e5bb039e03a5ee00eb648c625c0d536dc6b555a"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/github-receipts.json",
+      "bytes": 646,
+      "git_blob_sha": "5b594c076936eb4c37cacc565589e078eb9bc0fa",
+      "sha256": "bea797a7d34c03ab3b65a96271f444a6a1474b5e36b42c9e651398a1a036fc27"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/gpt-review-packet.json",
+      "bytes": 5517,
+      "git_blob_sha": "7604cb6c48cb8084d64cca4f11dc0d54a493e37b",
+      "sha256": "4cf678fadfe50dca8d261033bcdcf58b5b12ef280d9f6072e467b855ccf27839"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/gpt-review-probe.json",
+      "bytes": 1824,
+      "git_blob_sha": "6c7b89bb924908a5106a4ae03653e3915cc30e2e",
+      "sha256": "5dfc5eefacab37099ae046e38eec61ec79966c30f5c50bfd2f16e63989ad5087"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/legacy-retirement.json",
+      "bytes": 548,
+      "git_blob_sha": "60ecbd7fc153bbafc7a2cc371877ada2fc54039c",
+      "sha256": "cbae6679521d3f68a2b6cd04c7022244f86097f81fc8ed2db66f51233665d6d9"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/native-boundary-review.json",
+      "bytes": 507,
+      "git_blob_sha": "a9d07e8a0247302f0b16939d261ff00c3de2b52c",
+      "sha256": "68af5271f8ac27c8ad9df467c26756334ee8ad558ee5ed84b835ab11457d7871"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/native-isolation.json",
+      "bytes": 1538,
+      "git_blob_sha": "ede730f263ebd173e04276ddc28b3f713083f4ac",
+      "sha256": "756469adfbc5be137f52362fdfc4d4ba35b5ce646a99f30592937063b7affcc0"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/plan.md",
+      "bytes": 3013,
+      "git_blob_sha": "716319cb9955c2bb05b8498cb5d2c8067762b882",
+      "sha256": "b192250037245cc4b5cff0c4c46e0045449ae4fedaaac47cb282294eeadc82a8"
+    },
+    {
+      "path": "irs-workflow-migration/acceptance/test_runner.py",
+      "bytes": 51849,
+      "git_blob_sha": "2a19b1accaf1c07175bf68f276f86bfce365b6a4",
+      "sha256": "3e31e747016eb8c9adc1e9260f613ac7716f1bb9c92d0abc12f2ec4d8a3fe5df"
+    },
+    {
+      "path": "irs-workflow-migration/automation-retirement-prompt.txt",
+      "bytes": 575,
+      "git_blob_sha": "83097a0abb39bfbb146cd755272ce097cde875d1",
+      "sha256": "cd1e43f3dd04b5653f12f97928e95265877246e9c46f0ee340bd1918dc9ea3b6"
+    },
+    {
+      "path": "irs-workflow-migration/byte-integrity.md",
+      "bytes": 1117,
+      "git_blob_sha": "cd519df58c1330f7ab895a4c391ba53a8ccffca3",
+      "sha256": "ce617fd4706727b6b82ae8293f51d015d8c97d733596e0125f87e0a9e63e86ab"
+    },
+    {
+      "path": "irs-workflow-migration/cutover-runbook.md",
+      "bytes": 3517,
+      "git_blob_sha": "8b3de5b4f4436d1bccdf0f92ce9b54f4dc0371a3",
+      "sha256": "903c21ad37cbba2af8f4a09b1d366aac5416f5e82c6e814aa2bd9ac9653ec59f"
+    },
+    {
+      "path": "irs-workflow-migration/data-contract.md",
+      "bytes": 9046,
+      "git_blob_sha": "143b5e6902007e2e37b4543b460da2127019fd95",
+      "sha256": "f15aa1c7c2379ebbb2ccc1b00ffeb10933fcd47634a8262a6da0cdbf56e58d3d"
+    },
+    {
+      "path": "irs-workflow-migration/decision-input-template.md",
+      "bytes": 2637,
+      "git_blob_sha": "006c7fbeeb369ecbe4c4306e159f8f117189b745",
+      "sha256": "5f2c22f1acabd6f22755943710d085b402d0a63277064cbabb76dfbf4fae4d89"
+    },
+    {
+      "path": "irs-workflow-migration/decision-output.schema.json",
+      "bytes": 2713,
+      "git_blob_sha": "316fff6801f23bca1a78cde43d9bed5eefa771b9",
+      "sha256": "e7fac420dd59859dd48561bbf5faf0e8beceb26c03dadbf434da39fe1363de8c"
+    },
+    {
+      "path": "irs-workflow-migration/decisions.jsonl",
+      "bytes": 581,
+      "git_blob_sha": "c2b97603f1d2343c74e53749f5487ec18e95b0cc",
+      "sha256": "8c0a617690b608635e1bd4383b1fdeabb37e99feca51ef55d84bc6e8e7389546"
+    },
+    {
+      "path": "irs-workflow-migration/events.jsonl",
+      "bytes": 4125,
+      "git_blob_sha": "026fa9308f53299eb3eb98a33c42acfbaf54822e",
+      "sha256": "b2e7b73b5aa53602b2ab3474ebd791695820d1661ca26c88a36fb0d80f1a73de"
+    },
+    {
+      "path": "irs-workflow-migration/gemini_tools.py",
+      "bytes": 12450,
+      "git_blob_sha": "6a923b7d73d422bbb3d588a85922c4008de16b79",
+      "sha256": "b62cdb155e8bd71ee1dd6b116c1c21f523a2b5512e1e9c39f9dc9db90c1c6e85"
+    },
+    {
+      "path": "irs-workflow-migration/gpt_decision.py",
+      "bytes": 14807,
+      "git_blob_sha": "7adc3f0111a1b7225fe5f9347d2e9cfbddecb39d",
+      "sha256": "d5ce2f7015cd8bfdb29fb8d727921f10f3da0d7b80a6b085a6a69226e5e110c4"
+    },
+    {
+      "path": "irs-workflow-migration/handoff.md",
+      "bytes": 4238,
+      "git_blob_sha": "5414f7622ea30cb12ea989f197d65c649a973d5b",
+      "sha256": "427cca7ccad11aff2f9f802aa89bd31c0cd92566e097c3b875effc21941204dc"
+    },
+    {
+      "path": "irs-workflow-migration/legacy-routing-patch.json",
+      "bytes": 718,
+      "git_blob_sha": "a24cf195b1b0f6c897c87143e36a7f736a07c98e",
+      "sha256": "badf22390dd6531c8202c61e24da6f85264f270e04818545a2a7574566bd717f"
+    },
+    {
+      "path": "irs-workflow-migration/metrics.md",
+      "bytes": 4696,
+      "git_blob_sha": "ef7ddd0bace3bb3c78ddf95c4a44f7b7e17045cd",
+      "sha256": "518c6b1f3e73e5ac117a6ab4f047c3353a447b6363660266cb420a609031cfb2"
+    },
+    {
+      "path": "irs-workflow-migration/native_boundary.py",
+      "bytes": 21979,
+      "git_blob_sha": "4451785bc07fce97eb064276ce647c842d1f939c",
+      "sha256": "4fc8f30510a2fe959e95c9ebd310631cc86bf516019b8c4235b43fe913932944"
+    },
+    {
+      "path": "irs-workflow-migration/operator-guide.md",
+      "bytes": 4082,
+      "git_blob_sha": "58dd1d91a7628437fcebdd2b2eb3bc73d45bf054",
+      "sha256": "15b742c1059465afee5888ac17f79d29e46b834621f7e2ef354566a009109c0e"
+    },
+    {
+      "path": "irs-workflow-migration/roles-and-routing.md",
+      "bytes": 3350,
+      "git_blob_sha": "cfeb0eb86ed0eb00df3fd1d424dee9bd86fdac6c",
+      "sha256": "14f1d2b495669a6222557e3b1db84d4d9493681e1dd9f213a4ea5c0999099bd5"
+    },
+    {
+      "path": "irs-workflow-migration/runner-usage.md",
+      "bytes": 2598,
+      "git_blob_sha": "88db809e162e163462a0548b9ca10d9db3da9cdf",
+      "sha256": "91db5b8c07a81d6577ce55edbb3fee0c18db96a44b08c04759301f5229ffec5b"
+    },
+    {
+      "path": "irs-workflow-migration/runner.py",
+      "bytes": 50282,
+      "git_blob_sha": "2a29a4eb8c85c4178e4b6fca4667f248f563c461",
+      "sha256": "9fe828683fd5b533e8318d82bcda5344d2fb39115710e23977b19f57adc4c35d"
+    },
+    {
+      "path": "irs-workflow-migration/state.json",
+      "bytes": 3515,
+      "git_blob_sha": "d75c5896c0f25d9340f7b61dacf0cd535e2f88f4",
+      "sha256": "d26adbde5a6e677c1d0bb5aa5f876658dbcd1c0484c4023b32b2c21257e7581a"
+    },
+    {
+      "path": "irs-workflow-migration/status.md",
+      "bytes": 310,
+      "git_blob_sha": "189256e2eb096b63e39d2ffc388417a53abd0a4d",
+      "sha256": "9a0b92016fc42018e3d4e93cb6a661504739688e5220815a6085403e4f53d0f3"
+    },
+    {
+      "path": "irs-workflow-migration/task-template.md",
+      "bytes": 2036,
+      "git_blob_sha": "6409fa699ad52f73dfa544b906901bbf67aec655",
+      "sha256": "64f73060ee366486074dad8293c11ce12c712f4f65fea2fd0f01965559fc37cf"
+    },
+    {
+      "path": "irs-workflow-migration/usage.jsonl",
+      "bytes": 15592,
+      "git_blob_sha": "cad00c3f6eff17ba944e432d0313a257bec5f8aa",
+      "sha256": "9512f3babb4b32040fd308d396a7599db07e689811ed8886c20e6fc8e574b6ca"
+    },
+    {
+      "path": "irs-workflow-migration/workflow-amendment-M1.md",
+      "bytes": 2275,
+      "git_blob_sha": "dff8d8d8f3941103c84055877a3bc33f6924f4b5",
+      "sha256": "8e32087f9cbe715e87019b9ec8bff79a345419c3ce7374ed42aa7f7dc52ee410"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "gate_id": "V10",
+  "status": "BLOCKED",
+  "reviewer": "ChatGPT",
+  "reason": "No matched complete before/after task with comparable scope, quality and all-role usage",
+  "observations_ref": "acceptance/cost-observations.json",
+  "cached_tokens_policy": "unknown when not returned; not inferred zero",
+  "savings_percent": "not_estimated",
+  "blocks": "Full cost-success conclusion; not the approved paused control cutover",
+  "next_measurement": "Same-scope complete task, all roles and revisions included; include quality and wall time. No business task started under current pause."
+}

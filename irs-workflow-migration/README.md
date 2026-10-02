@@ -14,7 +14,7 @@
 | P4 | Gemini+GPT adapters | PASS_NODE_LOCAL |
 | P5 | role entry/handoff validation | PASS_CANDIDATE_LOCAL; activated by P6 |
 | P6 | paused cutover | PASS_PAUSED_CUTOVER |
-| P7 | metrics/optional tuning | NOT_DONE |
+| P7 | metrics/optional tuning | PASS_OBSERVATIONS; V10 BLOCKED; C16 optional not applied |
 
 ## 执行协作模型
 1. **Gemini 生成候选文本**：生成符合接口契约的补丁或文本候选方案，不直接执行写入。
@@ -28,3 +28,6 @@
 - `.local/` 为项目局部忽略目录（非全局配置），用于存放本地私有备份、模型 Prompt、原始回复与补丁候选件，严禁纳入版本控制或上传。
 - 公开凭据仅允许包含可移植校验和（SHA-256）、状态标识、审核结论与脱敏度量指标。
 - 严禁提交绝对路径、本地用户名、完整用户对话、API Key 或认证凭据。
+
+## 当前验收边界
+P0–P6 的迁移建设与暂停路由切换已审核；P7 的实测记录与比较协议已交付。V01–V09 凭证仅适用于 M1 控制与路由切换，不能替代 B04 产品视觉验收。V10 因缺少同范围、同质量的完整任务前后基准而阻塞。没有恢复业务、启用 B05 或开启通用业务工具。

@@ -1,5 +1,7 @@
 # IRS 工作流迁移验收方案
 
+本文件保留最初验收要求，下列 NOT_RUN 是制定方案时的初始状态。当前实际结果见 V01-cutover.json 至 V09-cutover.json、P6-review.json 和 V10-cost.json；迁移控制门槛与产品验收须按凭证中的范围分别判断。
+
 ## 状态分类定义
 - **NOT_RUN**：尚未执行校验。
 - **BLOCKED**：前置条件不满足或被策略阻断。

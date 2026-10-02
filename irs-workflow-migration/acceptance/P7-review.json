@@ -1,0 +1,26 @@
+{
+  "node": "P7",
+  "status": "PASS_OBSERVATIONS_ONLY",
+  "reviewer": "ChatGPT",
+  "implementation_author": "Gemini",
+  "checked_at_utc": "2026-10-02T11:22:36.152664+00:00",
+  "V10_status": "BLOCKED",
+  "C16_optional_status": "NOT_APPLIED",
+  "checks": {
+    "authoring_metadata_records": 39,
+    "reported_usage_matches_retained_records": true,
+    "cache_and_reasoning_not_double_counted": true,
+    "no_savings_estimate": true,
+    "historical_and_later_snapshots_separated": true,
+    "global_configuration_unchanged": true,
+    "newline_fix_authored_by": "Gemini; two revisions retained"
+  },
+  "files": {
+    "metrics.md": "518c6b1f3e73e5ac117a6ab4f047c3353a447b6363660266cb420a609031cfb2",
+    "acceptance/cost-observations.json": "e3bf7ae315d267e5fdfb07a4b04e2f547dd0686309fe04e0fa205a8a579f5bd0",
+    "acceptance/V10-cost.json": "51f34e7d9da606813e8fc4483f6dc6481293fc5cee6e0bc0c3fac6810f7b553b",
+    ".gitattributes": "4ce4b6e6b8435f8c3a8387387732964a2ebf0183e8d77b8247ae8061b033e462",
+    "byte-integrity.md": "ce617fd4706727b6b82ae8293f51d015d8c97d733596e0125f87e0a9e63e86ab"
+  },
+  "limitation": "Metrics deliverable reviewed; full cost success and general product visual gate remain unproven."
+}

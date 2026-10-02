@@ -1,0 +1,138 @@
+{
+  "recorded_at_utc": "2026-10-02T10:53:23.578332+00:00",
+  "gemini_authoring_call_count": 34,
+  "gemini_authoring_usage": {
+    "prompt_tokens": 147384,
+    "completion_tokens": 545450,
+    "total_tokens": 692834
+  },
+  "gemini_cached_tokens": "unknown unless actually returned",
+  "gpt_thread_observations": {
+    "overview": {
+      "snapshot_utc": "2026-10-02T10:29:13.869Z",
+      "total_token_usage": {
+        "input_tokens": 105823,
+        "cached_input_tokens": 85120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1010,
+        "reasoning_output_tokens": 126,
+        "total_tokens": 106833
+      },
+      "last_token_usage": {
+        "input_tokens": 38632,
+        "cached_input_tokens": 33536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 697,
+        "reasoning_output_tokens": 126,
+        "total_tokens": 39329
+      }
+    },
+    "approval": {
+      "snapshot_utc": "2026-10-02T10:29:18.495Z",
+      "total_token_usage": {
+        "input_tokens": 68756,
+        "cached_input_tokens": 51456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 810,
+        "reasoning_output_tokens": 344,
+        "total_tokens": 69566
+      },
+      "last_token_usage": {
+        "input_tokens": 35374,
+        "cached_input_tokens": 33152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 624,
+        "reasoning_output_tokens": 291,
+        "total_tokens": 35998
+      }
+    },
+    "acceptance": {
+      "snapshot_utc": "2026-10-02T10:30:11.719Z",
+      "total_token_usage": {
+        "input_tokens": 224971,
+        "cached_input_tokens": 169472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1579,
+        "reasoning_output_tokens": 299,
+        "total_tokens": 226550
+      },
+      "last_token_usage": {
+        "input_tokens": 54708,
+        "cached_input_tokens": 45824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1130,
+        "reasoning_output_tokens": 267,
+        "total_tokens": 55838
+      }
+    },
+    "migration_coordinator": {
+      "snapshot_utc": "2026-10-02T10:52:18.320Z",
+      "total_token_usage": {
+        "input_tokens": 26049780,
+        "cached_input_tokens": 25111552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 157787,
+        "reasoning_output_tokens": 55971,
+        "total_tokens": 26207567
+      },
+      "last_token_usage": {
+        "input_tokens": 213289,
+        "cached_input_tokens": 211456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 662,
+        "reasoning_output_tokens": 213,
+        "total_tokens": 213951
+      }
+    }
+  },
+  "gpt_cli_probe": {
+    "input_tokens": 20695,
+    "output_tokens": 526,
+    "cached_input_tokens": 0,
+    "decision": "needs_evidence"
+  },
+  "comparable_before_after_tasks": false,
+  "savings_percent": "not_estimated",
+  "coverage": "thread lifetime and authoring API calls; not equal workloads; not complete end-to-end task baseline",
+  "later_snapshot": {
+    "recorded_at_utc": "2026-10-02T11:22:36.148997+00:00",
+    "gemini_authoring_call_count": 37,
+    "gemini_authoring_usage": {
+      "prompt_tokens": 150136,
+      "completion_tokens": 569865,
+      "total_tokens": 720001
+    },
+    "gemini_cached_tokens": "unknown",
+    "migration_coordinator": {
+      "snapshot_utc": "2026-10-02T11:20:30.508Z",
+      "total_token_usage": {
+        "input_tokens": 30165688,
+        "cached_input_tokens": 29135104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 189032,
+        "reasoning_output_tokens": 67325,
+        "total_tokens": 30354720
+      },
+      "last_token_usage": {
+        "input_tokens": 80294,
+        "cached_input_tokens": 77568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 489,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 80783
+      }
+    },
+    "coverage_note": "Measured snapshot, not final conversation lifetime. Authoring totals include all 37 retained metadata records and rejected/revision calls; actual tool and fresh GPT probes are separate records. No matched end-to-end baseline."
+  },
+  "publication_integrity_followup": {
+    "recorded_at_utc": "2026-10-02T11:27:55.882632+00:00",
+    "authoring_calls": 39,
+    "authoring_usage": {
+      "prompt_tokens": 150852,
+      "completion_tokens": 572645,
+      "total_tokens": 723497
+    },
+    "cached_tokens": "unknown",
+    "reason": "Two minimal Gemini revisions for scoped newline preservation; existing measurements retained separately."
+  }
+}

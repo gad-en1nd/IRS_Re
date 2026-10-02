@@ -8,7 +8,7 @@
 | 节点编号 | 节点名称与职责 | 状态 |
 | :--- | :--- | :--- |
 | P0 | baseline/evidence | PASS_NODE_LOCAL |
-| P1 | handoff/roles/rules | NOT_DONE |
+| P1 | handoff/roles/rules | PASS_NODE_LOCAL |
 | P2 | state/events/decisions/task contracts | NOT_DONE |
 | P3 | runner | NOT_DONE |
 | P4 | Gemini+GPT adapters | NOT_DONE |

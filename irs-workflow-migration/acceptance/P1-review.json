@@ -1,0 +1,35 @@
+{
+  "node": "P1",
+  "reviewer": "ChatGPT",
+  "decision": "PASS_NODE",
+  "reviewed_at": "2026-10-02T07:33:40.415132+00:00",
+  "generation": [
+    "P1",
+    "P1-R1",
+    "P1-R2"
+  ],
+  "rejected_findings": [
+    "migration authority narrowed incorrectly",
+    "acceptance and final approval conflated",
+    "unsupported current DB process claim",
+    "handoff omitted effective pause",
+    "rollback incorrectly described as down-compatible",
+    "ad-hoc role lost independent task responsibility"
+  ],
+  "resolved": true,
+  "checks": {
+    "legacy00_handoff_compared": true,
+    "baseline_ids_match": true,
+    "latest_business_pause_preserved": true,
+    "migration_authority_separate_from_business_resume": true,
+    "unsupported_process_claim_removed": true,
+    "frozen_product_rules_inherited": true
+  },
+  "gate_scope": "P1 docs reviewed; V02 actual new00 comprehension and runtime gates remain NOT_RUN",
+  "github_status": "REVIEWED_UPLOAD_PENDING",
+  "artifact_sha256": {
+    "roles-and-routing.md": "14f1d2b495669a6222557e3b1db84d4d9493681e1dd9f213a4ea5c0999099bd5",
+    "workflow-amendment-M1.md": "8e32087f9cbe715e87019b9ec8bff79a345419c3ce7374ed42aa7f7dc52ee410",
+    "handoff.md": "427cca7ccad11aff2f9f802aa89bd31c0cd92566e097c3b875effc21941204dc"
+  }
+}

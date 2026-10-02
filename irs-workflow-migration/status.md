@@ -7,5 +7,5 @@
 - Migration Paused: `False`
 - Effective Pause Policy: `USER-POLICY-PAUSE-AFTER-B04-20261002-001`
 - Effective Migration Pause Policy: `None`
-- Total Events: `0`
-- Tasks Tracked: `0`
+- Total Events: `4`
+- Tasks Tracked: `1`

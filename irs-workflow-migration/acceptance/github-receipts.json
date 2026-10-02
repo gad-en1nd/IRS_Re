@@ -1,0 +1,14 @@
+{
+  "repository": "gad-en1nd/IRS_Re",
+  "branch": "main",
+  "path": "irs-workflow-migration/",
+  "commits": {
+    "P0": "c26eaa43594260f0844236d92c6f14af6b79c3e5",
+    "P1": "a2fe3004bacb296115664aeacd83bb4dabbf2016",
+    "P2": "4c2f35659d0bad4d9db18cb4022401528e361100",
+    "P3": "96fc4bfe72dd80f04e005087c6ece9ad60753568",
+    "P4": "da7535dd54a13204fdaf64f751a5f729323b02e0"
+  },
+  "recorded_at_utc": "2026-10-02T10:37:19.674699+00:00",
+  "verified_by": "ChatGPT GitHub connector non-force update_ref confirmations"
+}

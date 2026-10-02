@@ -10,24 +10,77 @@
   "current_version": "B04/v0.4.0",
   "roles": {
     "overview": {
-      "thread_id": null,
-      "status": "pending_creation"
+      "thread_id": "01a0fc28-4bb4-7a61-bf92-1ab8c8a5c2a9",
+      "status": "candidate"
     },
     "approval": {
-      "thread_id": null,
-      "status": "pending_creation"
+      "thread_id": "01a0fc28-a09d-77c0-b6af-0d29cc16864d",
+      "status": "candidate"
     },
     "acceptance": {
-      "thread_id": null,
-      "status": "pending_creation"
+      "thread_id": "01a0fc28-f069-76f0-b292-f100706d7d42",
+      "status": "candidate"
     },
     "ad_hoc": {
       "thread_id": null,
       "status": "pending_creation"
     }
   },
-  "tasks": {},
-  "processed_event_ids": {},
+  "tasks": {
+    "REQ-P3": {
+      "task_id": "P3",
+      "candidate": {
+        "commit": "96fc4bfe72dd80f04e005087c6ece9ad60753568",
+        "tree": "a1bfeccbe562b70c0b626599fc1c324861e8e372",
+        "content_hash": "sha256:6ed4bc09ebdec5a4d94a7b1c758cc1a9786b1673439f3c94c1b1090b100e3a31",
+        "evidence_hash": "sha256:6eaf61f0f41d5fb974a86f4e97543665e7df847a3126470f82636633995f4b75",
+        "scope": "migration"
+      },
+      "task_contract": {
+        "task_id": "P3",
+        "allow_read_paths": [
+          "runner.py",
+          "acceptance/test_runner.py",
+          "runner-usage.md"
+        ],
+        "allow_write_paths": [
+          "runner.py",
+          "acceptance/test_runner.py",
+          "runner-usage.md"
+        ]
+      },
+      "review_status": "REVIEWED",
+      "review_decision": "approve",
+      "review_findings": [],
+      "review_payload": {
+        "request_id": "REQ-P3",
+        "candidate": {
+          "commit": "96fc4bfe72dd80f04e005087c6ece9ad60753568",
+          "tree": "a1bfeccbe562b70c0b626599fc1c324861e8e372",
+          "content_hash": "sha256:6ed4bc09ebdec5a4d94a7b1c758cc1a9786b1673439f3c94c1b1090b100e3a31",
+          "evidence_hash": "sha256:6eaf61f0f41d5fb974a86f4e97543665e7df847a3126470f82636633995f4b75",
+          "scope": "migration"
+        },
+        "decision": "approve",
+        "findings": [],
+        "evidence_refs": [
+          "acceptance/P3-review.json"
+        ],
+        "review_kind": "technical",
+        "human_approval": false,
+        "authorization_source_ref": "gpt-p3",
+        "scope": "migration"
+      },
+      "completion_status": "completed",
+      "revision": 1
+    }
+  },
+  "processed_event_ids": {
+    "EVT-P3-SUBMIT": "sha256:b56f9930541167cfb26faed8efe54ceb60ff625d03dd79ce834707b408ea42ba",
+    "EVT-P3-REVIEW": "sha256:c25e9c1bc67980fb5f26aa53e2ab8c506b4fe680ec031ebd32a4d285b7df9039",
+    "EVT-P3-COMPLETE": "sha256:ea4a9bba7527eaf167ab56bd1da50f93e5bbd65fc92728dc6d8d502a15c95902",
+    "EVT-CANDIDATE-ROLES": "sha256:5f40458567598e1b0261d96c7d92781785386e1749d8d186a20ba6f45551b7ec"
+  },
   "active_owner": "legacy00",
   "tool_mode": "text_candidate_reviewed",
   "write_run_tools_enabled": false,

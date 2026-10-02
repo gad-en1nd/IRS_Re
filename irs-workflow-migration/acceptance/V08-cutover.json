@@ -1,0 +1,22 @@
+{
+  "gate_id": "V08",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "Three actual distinct visible UI role IDs initialized; overview and acceptance read governing files",
+    "Old00 observed notLoaded with completed handoff; old scheduler paused and retired; sole routing owner becomes runner at cutover"
+  ],
+  "evidence": {
+    "acceptance/P5-review.json": "sha256:0be397b5e167dcfc1150ed86054a5d926e45fa72e1638d28a4ad458d04aa6a06",
+    "acceptance/legacy-retirement.json": "sha256:cbae6679521d3f68a2b6cd04c7022244f86097f81fc8ed2db66f51233665d6d9",
+    "acceptance/automation-retirement.json": "sha256:85101c004777f297967df9a5acffc7295e8400a671c0c8574b551e71c6c29db2"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ],
+  "visibility_note": "UI chats exist and initialization completed; approval chat has not independently read files. Precondition gate; actual post-cutover ownership is checked separately."
+}

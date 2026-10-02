@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generation": "m1-candidate",
-  "mode": "shadow",
+  "generation": "m1-active",
+  "mode": "active",
   "business_paused": true,
   "migration_paused": false,
   "effective_pause_policy": "USER-POLICY-PAUSE-AFTER-B04-20261002-001",
@@ -11,15 +11,15 @@
   "roles": {
     "overview": {
       "thread_id": "01a0fc28-4bb4-7a61-bf92-1ab8c8a5c2a9",
-      "status": "candidate"
+      "status": "active"
     },
     "approval": {
       "thread_id": "01a0fc28-a09d-77c0-b6af-0d29cc16864d",
-      "status": "candidate"
+      "status": "active"
     },
     "acceptance": {
       "thread_id": "01a0fc28-f069-76f0-b292-f100706d7d42",
-      "status": "candidate"
+      "status": "active"
     },
     "ad_hoc": {
       "thread_id": null,
@@ -79,9 +79,10 @@
     "EVT-P3-SUBMIT": "sha256:b56f9930541167cfb26faed8efe54ceb60ff625d03dd79ce834707b408ea42ba",
     "EVT-P3-REVIEW": "sha256:c25e9c1bc67980fb5f26aa53e2ab8c506b4fe680ec031ebd32a4d285b7df9039",
     "EVT-P3-COMPLETE": "sha256:ea4a9bba7527eaf167ab56bd1da50f93e5bbd65fc92728dc6d8d502a15c95902",
-    "EVT-CANDIDATE-ROLES": "sha256:5f40458567598e1b0261d96c7d92781785386e1749d8d186a20ba6f45551b7ec"
+    "EVT-CANDIDATE-ROLES": "sha256:5f40458567598e1b0261d96c7d92781785386e1749d8d186a20ba6f45551b7ec",
+    "EVT-M1-PAUSED-CUTOVER": "sha256:b3f0d43df636d078380d62515c933ca00f32e859a4267720a60babb52eac32cd"
   },
-  "active_owner": "legacy00",
+  "active_owner": "runner",
   "tool_mode": "text_candidate_reviewed",
   "write_run_tools_enabled": false,
   "github_target": {
@@ -95,5 +96,6 @@
     "write-run-isolation",
     "desktop-bridge",
     "cost-comparison"
-  ]
+  ],
+  "orchestration_only": true
 }

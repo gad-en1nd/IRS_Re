@@ -1,0 +1,21 @@
+{
+  "gate_id": "V04",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "Exact candidate tuple binds request/review/completion",
+    "Real reviewed P3 completion and duplicate exercised; tests reject changed tuples and changed contracts"
+  ],
+  "evidence": {
+    "acceptance/P6-tests.json": "sha256:a90375c34a0723df841a86d7be09ec1d8de1abd030975e1a8cc1fd4b7b1bf385",
+    "acceptance/P3-review.json": "sha256:9786c8230c8d9660d14a6707a945c97a5517aca7d294812d6f47cfec6c3d94dd",
+    "decisions.jsonl": "sha256:8c0a617690b608635e1bd4383b1fdeabb37e99feca51ef55d84bc6e8e7389546"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ]
+}

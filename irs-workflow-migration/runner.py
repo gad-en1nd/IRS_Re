@@ -762,6 +762,8 @@ class Runner:
             state["active_owner"] = "runner"
             state["orchestration_only"] = True
             state["business_paused"] = True
+            for role_name in ("overview", "approval", "acceptance"):
+                state["roles"][role_name]["status"] = "active"
 
         state["processed_event_ids"][evt["event_id"]] = fp
         return decision_record

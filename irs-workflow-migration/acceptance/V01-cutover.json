@@ -1,0 +1,20 @@
+{
+  "gate_id": "V01",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "Frozen B04 HEAD/tree/tag and captured release assets match baseline",
+    "Only authorized C13 control delta; other three control files retain captured hashes"
+  ],
+  "evidence": {
+    "acceptance/P6-baseline-check.json": "sha256:8dfa7b1e46049bbed21d45afbecce2a054c3088aab8fc13348241098c0c2ce72",
+    "acceptance/legacy-retirement.json": "sha256:cbae6679521d3f68a2b6cd04c7022244f86097f81fc8ed2db66f51233665d6d9"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ]
+}

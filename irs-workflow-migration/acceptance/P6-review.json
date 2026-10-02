@@ -1,0 +1,95 @@
+{
+  "node": "P6",
+  "status": "PASS_PAUSED_CUTOVER",
+  "reviewer": "ChatGPT",
+  "implementation_author": "Gemini",
+  "checked_at_utc": "2026-10-02T11:17:54.864400+00:00",
+  "active_owner": "runner",
+  "generation": "m1-active",
+  "business_paused": true,
+  "write_run_tools_enabled": false,
+  "roles": {
+    "overview": {
+      "thread_id": "01a0fc28-4bb4-7a61-bf92-1ab8c8a5c2a9",
+      "status": "active"
+    },
+    "approval": {
+      "thread_id": "01a0fc28-a09d-77c0-b6af-0d29cc16864d",
+      "status": "active"
+    },
+    "acceptance": {
+      "thread_id": "01a0fc28-f069-76f0-b292-f100706d7d42",
+      "status": "active"
+    },
+    "ad_hoc": {
+      "thread_id": null,
+      "status": "pending_creation"
+    }
+  },
+  "cli_checks": [
+    {
+      "command": "ingest",
+      "result": {
+        "status": "ingested",
+        "event_id": "EVT-M1-PAUSED-CUTOVER",
+        "event_type": "cutover"
+      }
+    },
+    {
+      "command": "recover",
+      "result": {
+        "status": "recovered",
+        "event_count": 5
+      }
+    },
+    {
+      "command": "status",
+      "result": {
+        "status": "ok",
+        "event_count": 5,
+        "generation": "m1-active",
+        "mode": "active",
+        "migration_paused": false,
+        "business_paused": true
+      }
+    },
+    {
+      "command": "ingest",
+      "result": {
+        "status": "duplicate",
+        "event_id": "EVT-M1-PAUSED-CUTOVER"
+      }
+    },
+    {
+      "command": "recover",
+      "result": {
+        "status": "recovered",
+        "event_count": 5
+      }
+    },
+    {
+      "command": "status",
+      "result": {
+        "status": "ok",
+        "event_count": 5,
+        "generation": "m1-active",
+        "mode": "active",
+        "migration_paused": false,
+        "business_paused": true
+      }
+    }
+  ],
+  "other_original_control_files_unchanged": true,
+  "frozen_product_head_and_status_unchanged": true,
+  "old_automation_status": "PAUSED",
+  "old00_observed_status": "notLoaded; latest handoff turn completed",
+  "authorization": "existing approved migration plan; no new approval click fabricated",
+  "gate_scope": "M1 control/routing only, V01-V09",
+  "V10": "BLOCKED: no comparable before/after task baseline",
+  "limitations": [
+    "No B05, business resume, DB startup or new heartbeat",
+    "HTML human visual validation remains unknown",
+    "General business tool execution remains disabled",
+    "No full-machine process census performed"
+  ]
+}

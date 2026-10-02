@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "actual_unittests_passed": 23,
+  "test_runner_sha256": "3e31e747016eb8c9adc1e9260f613ac7716f1bb9c92d0abc12f2ec4d8a3fe5df",
+  "runner_sha256": "9fe828683fd5b533e8318d82bcda5344d2fb39115710e23977b19f57adc4c35d",
+  "source_log_sha256": "80064233a0b6955d7af73cb196e239160256b123094abad7aaa122bbf3d38f23",
+  "cli_recovery_before_cutover": [
+    {
+      "command": "status",
+      "result": {
+        "status": "ok",
+        "event_count": 4,
+        "generation": "m1-candidate",
+        "mode": "shadow",
+        "migration_paused": false,
+        "business_paused": true
+      }
+    },
+    {
+      "command": "recover",
+      "result": {
+        "status": "recovered",
+        "event_count": 4
+      }
+    },
+    {
+      "command": "status",
+      "result": {
+        "status": "ok",
+        "event_count": 4,
+        "generation": "m1-candidate",
+        "mode": "shadow",
+        "migration_paused": false,
+        "business_paused": true
+      }
+    },
+    {
+      "command": "recover",
+      "result": {
+        "status": "recovered",
+        "event_count": 4
+      }
+    }
+  ],
+  "scope": "current runner after Gemini role-status cutover patch"
+}

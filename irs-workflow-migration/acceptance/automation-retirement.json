@@ -1,0 +1,15 @@
+{
+  "automation_id": "irs",
+  "status": "PASS",
+  "actual_scheduler_status": "PAUSED",
+  "changed_fields": [
+    "prompt",
+    "updated_at"
+  ],
+  "all_other_fields_preserved": true,
+  "prompt_normalization": "API removed one final newline; all prompt characters otherwise equal",
+  "prompt_sha256": "15a7efe575f47cfae0f2cbda59528cdf417b0449792dda672eeb515a5421e3aa",
+  "before_toml_sha256": "6afc1146e5caed62ba9d930f9250cfad106e8b9429fd68aaf933411d2b3fb41a",
+  "after_toml_sha256": "52a71d05f837e458cf284aac900ecc127e5b0e6138596877cbe1fc10d3eaf509",
+  "backup_ref": ".local/P6-backups/automation-before.toml"
+}

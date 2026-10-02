@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "source_alias": "original-control/00/legacy-controller",
+  "before_sha256": "0a98323f49f43a0a0fd937ef1d880f25eedf4d31db22a0c4960b6140061ed70a",
+  "after_sha256": "3e0c990d5d4bc174ac55c1b6d93cb1bddc2d0904c4b629b9e48af2354807a669",
+  "authorized_changed_fields": [
+    "legacyControllerStatus",
+    "migrationRouting",
+    "nextAction"
+  ],
+  "all_other_values_preserved": true,
+  "relative_routing_resolves": true,
+  "business_paused": true,
+  "backup_ref": ".local/P6-backups/legacy-controller-before.json"
+}

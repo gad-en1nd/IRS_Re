@@ -1,0 +1,21 @@
+{
+  "gate_id": "V07",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "Bounded fresh CLI packet carries candidate, scope and selected evidence without whole chat history",
+    "Task contract/path/revision enforcement and migration-only scope verified"
+  ],
+  "evidence": {
+    "acceptance/P6-tests.json": "sha256:a90375c34a0723df841a86d7be09ec1d8de1abd030975e1a8cc1fd4b7b1bf385",
+    "acceptance/gpt-review-packet.json": "sha256:4cf678fadfe50dca8d261033bcdcf58b5b12ef280d9f6072e467b855ccf27839",
+    "acceptance/gpt-review-probe.json": "sha256:5dfc5eefacab37099ae046e38eec61ec79966c30f5c50bfd2f16e63989ad5087"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "gate_id": "V05",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "14 actual OS/child isolation checks passed",
+    "Actual Gemini proxy closure: four rounds and three tools; full assistant messages retained"
+  ],
+  "evidence": {
+    "acceptance/native-isolation.json": "sha256:756469adfbc5be137f52362fdfc4d4ba35b5ce646a99f30592937063b7affcc0",
+    "acceptance/gemini-tools-review.json": "sha256:316d4318013ae291c40c168c0e5bb039e03a5ee00eb648c625c0d536dc6b555a",
+    "acceptance/gemini-tools-probe.json": "sha256:da7cd6596d9fc42131e5ad23ce85cc9f0eca28785e25c1bceeb32c1432221ea9"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ],
+  "native_proof_ref": "acceptance/native-isolation.json",
+  "native_proof_hash": "sha256:756469adfbc5be137f52362fdfc4d4ba35b5ce646a99f30592937063b7affcc0",
+  "tool_scope": "preserved isolated candidate fixture only; general business write/run remains disabled"
+}

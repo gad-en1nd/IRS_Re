@@ -1,0 +1,17 @@
+{
+  "legacyControllerStatus": "historical_read_only",
+  "migrationRouting": {
+    "generation": "m1-active",
+    "owner": "runner",
+    "authoritativeState": "../../工程迁移/irs-workflow-migration/state.json",
+    "roles": {
+      "overview": "01a0fc28-4bb4-7a61-bf92-1ab8c8a5c2a9",
+      "approval": "01a0fc28-a09d-77c0-b6af-0d29cc16864d",
+      "acceptance": "01a0fc28-f069-76f0-b292-f100706d7d42"
+    },
+    "businessPaused": true,
+    "effectiveBusinessPausePolicy": "USER-POLICY-PAUSE-AFTER-B04-20261002-001",
+    "oldRecordedThreadFieldsAreHistorical": true
+  },
+  "nextAction": "Old controller retired from dispatch; read migration state only; B05 and business automation remain paused."
+}

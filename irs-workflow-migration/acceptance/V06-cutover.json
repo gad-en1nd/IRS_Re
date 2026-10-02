@@ -1,0 +1,20 @@
+{
+  "gate_id": "V06",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "Tests block missing evidence/images, mismatched actor and false human approval",
+    "Actual partial-code GPT probe returns needs_evidence; technical review cannot grant human visual approval"
+  ],
+  "evidence": {
+    "acceptance/P6-tests.json": "sha256:a90375c34a0723df841a86d7be09ec1d8de1abd030975e1a8cc1fd4b7b1bf385",
+    "acceptance/gpt-review-probe.json": "sha256:5dfc5eefacab37099ae046e38eec61ec79966c30f5c50bfd2f16e63989ad5087"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ]
+}

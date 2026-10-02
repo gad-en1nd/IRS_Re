@@ -1,0 +1,20 @@
+{
+  "gate_id": "V09",
+  "status": "PASS",
+  "reviewer": "ChatGPT",
+  "reviewed_at_utc": "2026-10-02T11:16:59.429172+00:00",
+  "scope": "M1 paused control/routing cutover only",
+  "checks": [
+    "Actual separate CLI status/recover processes repeat without extra ledger events",
+    "23 tests include restart/idempotency/audit/error visibility and AST no LLM/network; idle core has no model polling"
+  ],
+  "evidence": {
+    "acceptance/P6-tests.json": "sha256:a90375c34a0723df841a86d7be09ec1d8de1abd030975e1a8cc1fd4b7b1bf385",
+    "runner.py": "sha256:9fe828683fd5b533e8318d82bcda5344d2fb39115710e23977b19f57adc4c35d"
+  },
+  "limitations": [
+    "No business resume or B05 authorization",
+    "No full product HTML human visual approval",
+    "No comparable cost savings conclusion"
+  ]
+}

@@ -1,7 +1,7 @@
 # IRS 工作流迁移项目 (irs-workflow-migration)
 
 ## 项目定位
-本项目为独立新增的工作流迁移工程目录，用于承接与重构 IRS 相关工作流，与历史业务代码物理解耦。当前处于暂停初始化状态（PAUSED）。历史 B04 流程已完全停止，B05 严禁启动。人类用户当前仅授权进行工程迁移及经审核后的上传操作。
+本项目为独立新增的工作流迁移工程目录，用于承接与重构 IRS 相关工作流，与历史业务代码物理解耦。当前迁移路由已生效（m1-active），业务保持暂停。旧自动化为 PAUSED，B05 未启动；未做全机进程普查。人类用户当前仅授权进行工程迁移及经审核后的上传操作。
 
 ## 节点执行状态
 
@@ -12,8 +12,8 @@
 | P2 | state/events/decisions/task contracts | PASS_NODE_LOCAL |
 | P3 | runner | PASS_NODE_LOCAL |
 | P4 | Gemini+GPT adapters | PASS_NODE_LOCAL |
-| P5 | candidate role entry/handoff validation | PASS_CANDIDATE_LOCAL |
-| P6 | paused cutover | NOT_DONE |
+| P5 | role entry/handoff validation | PASS_CANDIDATE_LOCAL; activated by P6 |
+| P6 | paused cutover | PASS_PAUSED_CUTOVER |
 | P7 | metrics/optional tuning | NOT_DONE |
 
 ## 执行协作模型

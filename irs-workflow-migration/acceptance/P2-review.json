@@ -1,0 +1,38 @@
+{
+  "node": "P2",
+  "reviewer": "ChatGPT",
+  "decision": "PASS_NODE",
+  "reviewed_at": "2026-10-02T07:51:11.530586+00:00",
+  "generation": [
+    "P2",
+    "P2-R1",
+    "P2-R2"
+  ],
+  "resolved_findings": [
+    "Windows lock compatibility",
+    "fabricated environment deadline removed",
+    "GPT cannot label human visual",
+    "on-demand ad-hoc role",
+    "registered provenance instead of external flags",
+    "project canonical JSON not RFC8785 claim"
+  ],
+  "transport_format_repair": "P2-R1 one extraneous trailing brace in outer envelope removed, file contents unchanged, raw retained",
+  "checks": {
+    "json_parses": true,
+    "paused_shadow_state": true,
+    "no_fabricated_threads_or_ledger_events": true,
+    "review_schema_human_approval_false": true,
+    "contract_interfaces_consistent": true
+  },
+  "gate_scope": "Data contracts only; runtime gates remain NOT_RUN",
+  "artifact_sha256": {
+    "events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decisions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "state.json": "3f0803fcf52bbaf457f05470d618a71ae09b481b1044823c99325b104102c51d",
+    "status.md": "4a4709495c48d264b6e12026cb3bce03300d62c6b5b0343f76ab2986bcc3e178",
+    "task-template.md": "64f73060ee366486074dad8293c11ce12c712f4f65fea2fd0f01965559fc37cf",
+    "decision-output.schema.json": "6d491e3a4b3e199d1afa426772ec9189fc67e647205d982be7ac8aa3e374e8ca",
+    "data-contract.md": "f15aa1c7c2379ebbb2ccc1b00ffeb10933fcd47634a8262a6da0cdbf56e58d3d",
+    "decision-input-template.md": "5f2c22f1acabd6f22755943710d085b402d0a63277064cbabb76dfbf4fae4d89"
+  }
+}

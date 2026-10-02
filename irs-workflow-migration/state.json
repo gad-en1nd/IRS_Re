@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "generation": "m1-candidate",
+  "mode": "shadow",
+  "business_paused": true,
+  "migration_paused": false,
+  "effective_pause_policy": "USER-POLICY-PAUSE-AFTER-B04-20261002-001",
+  "migration_authorization_id": "USER-MIGRATION-M1-START-20261002",
+  "authorization_source_ref": "migration-start",
+  "current_version": "B04/v0.4.0",
+  "roles": {
+    "overview": {
+      "thread_id": null,
+      "status": "pending_creation"
+    },
+    "approval": {
+      "thread_id": null,
+      "status": "pending_creation"
+    },
+    "acceptance": {
+      "thread_id": null,
+      "status": "pending_creation"
+    },
+    "ad_hoc": {
+      "thread_id": null,
+      "status": "pending_creation"
+    }
+  },
+  "tasks": {},
+  "processed_event_ids": {},
+  "active_owner": "legacy00",
+  "tool_mode": "text_candidate_reviewed",
+  "write_run_tools_enabled": false,
+  "github_target": {
+    "repository": "gad-en1nd/IRS_Re",
+    "branch": "main",
+    "path": "irs-workflow-migration/"
+  },
+  "github_status": "AUTHORIZATION_VERIFIED_P0_P1_UPLOADED",
+  "known_issues": [
+    "HTML-BROWSER-VERIFY",
+    "write-run-isolation",
+    "desktop-bridge",
+    "cost-comparison"
+  ]
+}

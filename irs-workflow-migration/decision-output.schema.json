@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GPTReviewDecisionOutput",
+  "description": "GPT 独立交叉审查输出契约，严禁包含私密凭据、绝对主机路径或模拟伪造视觉结论",
+  "type": "object",
+  "required": [
+    "request_id",
+    "candidate",
+    "decision",
+    "findings",
+    "evidence_refs",
+    "review_kind",
+    "human_approval",
+    "authorization_source_ref",
+    "scope"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "pattern": "^REQ-[A-Za-z0-9_.-]+$"
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "commit",
+        "tree",
+        "content_hash",
+        "evidence_hash",
+        "scope"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "commit": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{40}$"
+            }
+          ]
+        },
+        "tree": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{40}$"
+            }
+          ]
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "evidence_hash": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "scope": {
+          "type": "string",
+          "enum": ["migration", "business"]
+        }
+      }
+    },
+    "decision": {
+      "type": "string",
+      "enum": ["approve", "reject", "needs_evidence"]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_kind": {
+      "type": "string",
+      "enum": ["technical", "agent_visual"]
+    },
+    "human_approval": {
+      "type": "boolean",
+      "enum": [false],
+      "description": "GPT 审查输出中 human_approval 必须为 false，不得伪造人类授权"
+    },
+    "authorization_source_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "指向私有受信任注册表 .local/trusted-sources.json 中的审查注册项 ID"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["migration", "business"]
+    }
+  }
+}

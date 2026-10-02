@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | P0 | baseline/evidence | PASS_NODE_LOCAL |
 | P1 | handoff/roles/rules | PASS_NODE_LOCAL |
-| P2 | state/events/decisions/task contracts | NOT_DONE |
+| P2 | state/events/decisions/task contracts | PASS_NODE_LOCAL |
 | P3 | runner | NOT_DONE |
 | P4 | Gemini+GPT adapters | NOT_DONE |
 | P5 | candidate role entry/handoff validation | NOT_DONE |
